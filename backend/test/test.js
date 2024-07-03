@@ -41,3 +41,17 @@ describe('GET /files/data', () => {
       })
   })
 })
+
+describe('GET /files/list', () => {
+  it('Debe retornar una lista de archivos disponibles', (done) => {
+    chai.request(server)
+      .get('/files/list')
+      .end((err, res) => {
+        // Verifica que la respuesta tenga el estado 200 OK
+        res.should.have.status(200);
+        // Verifica que el cuerpo de la respuesta sea un array
+        res.body.should.be.an('array');
+        done();
+      });
+  });
+});
