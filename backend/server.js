@@ -3,8 +3,13 @@ const dataService = require('./service/dataService')
 const cors = require('cors');
 
 const app = express()
-const port = 3000
+const port = 5000
 app.use(cors());
+
+// Enpoint para abrir el server
+app.get('/', (req, res) => {
+  res.send('Servidor Backend Toolbox')
+})
 
 // Endpoint para obtener la lista de archivos
 app.get('/files/list', async (req, res) => {

@@ -4,7 +4,7 @@ export const FETCH_FILES_REQUEST = 'FETCH_FILES_REQUEST';
 export const FETCH_FILES_SUCCESS = 'FETCH_FILES_SUCCESS';
 export const FETCH_FILES_FAILURE = 'FETCH_FILES_FAILURE';
 
-axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL =  process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
 
 export const fetchFiles = (fileName = '') => {
     return async (dispatch) => {
