@@ -1,8 +1,10 @@
 const express = require('express')
 const dataService = require('./service/dataService')
+const cors = require('cors');
 
 const app = express()
 const port = 3000
+app.use(cors());
 
 // Endpoint para obtener la lista de archivos
 app.get('/files/list', async (req, res) => {
