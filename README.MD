@@ -1,6 +1,6 @@
 # Challenge para Toolbox
 
-Este proyecto contiene la app desarrollada para la empresa Toolbox. Proporciona funcionalidades para gestionar archivos y datos obtenidos de una API externa.
+Este proyecto contiene la app desarrollada para la empresa Toolbox.
 
 ## Configuración del Proyecto
 
@@ -9,6 +9,8 @@ Este proyecto contiene la app desarrollada para la empresa Toolbox. Proporciona 
 Desarrollo realizado con las siguientes herramientas y versionado:
 
 - Node.js (versión 14.21.3)
+- Node.js (versión 16.20.2)
+- Docker (Docker version 26.1.4, build 5650f9b)
 
 ### Instalación
 
@@ -18,24 +20,33 @@ Desarrollo realizado con las siguientes herramientas y versionado:
    git clone https://github.com/kyanesdev/toolbox.git
    ```
 
-2. Instala las dependencias del proyecto:
-
-    ```bash
-        cd backend
-        npm install
-   ```
-
-### Levantar el servidor localmente
+### Levantar la app completa localmente
 
 ```bash
-   npm run start
+   docker-compose up --build
 ```
 
-### Realizar los tests correspondientes
+### Acceder a la instancia local
 
 ```bash
-   npm test
+   http://localhost:3000/
 ```
+
+### Checklist de objetivos cumplidos
+
+- Requerimientos minimos para el backend ✅
+- Requerimientos opcionales para el backend ✅
+- Requerimientos minimos para el frontend ✅
+- Requerimietnos opcionales para el frontend (80%✅)
+- Requerimientos globales ✅
+  
+### Checklist de objetivos no cumplidos
+
+- Tests del front en JEST ❌ (Fueron construidos, pero tuve problemas de versionados entre node 16 y la suite de Jest requiere como minimo node 18)
+
+### Deadline estipulado
+
+- 48hs ✅ (Partiendo desde martes 2 de julio 2024 hasta jueves 4 de julio 2024)
 
 ## Desarrollador
 

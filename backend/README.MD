@@ -15,7 +15,7 @@ Desarrollo realizado con las siguientes herramientas y versionado:
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/kyanesdev/toolbox.git
+   git clone https://github.com/kyanesdev/toolbox-challenge.git
    ```
 
 2. Instala las dependencias del proyecto:
