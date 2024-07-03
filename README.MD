@@ -1,6 +1,6 @@
-# Backend-Challenge para Toolbox
+# Challenge para Toolbox
 
-Este proyecto contiene el backend desarrollado para la empresa Toolbox. Proporciona funcionalidades para gestionar archivos y datos obtenidos de una API externa.
+Este proyecto contiene la app desarrollada para la empresa Toolbox. Proporciona funcionalidades para gestionar archivos y datos obtenidos de una API externa.
 
 ## Configuración del Proyecto
 
